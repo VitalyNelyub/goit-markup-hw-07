@@ -1,0 +1,28 @@
+.work-section {
+  padding-bottom: 94px;
+}
+
+.work-list {
+  display: flex;
+  gap: 30px;
+}
+
+.work-img {
+  width: calc((100% - 60px) / 3);
+  position: relative;
+}
+
+.work-sub-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--primaci-bg-color);
+  font-weight: 700;
+  line-height: 1.14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
