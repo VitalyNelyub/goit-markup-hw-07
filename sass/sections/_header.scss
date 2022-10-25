@@ -1,3 +1,17 @@
+header {
+  border-bottom: 1px solid #ececec;
+}
+
+.head-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
 .head-logo {
   color: var(--accent-color);
   font-family: 'Raleway';
@@ -7,17 +21,8 @@
   line-height: 1.19;
 }
 
-header {
-  border-bottom: 1px solid #ececec;
-}
-
 .logo-style {
   color: var(--title-text-color);
-}
-
-.header-navigation {
-  display: flex;
-  align-items: center;
 }
 
 .navigation {
@@ -32,7 +37,6 @@ header {
 
 .nav-link::after {
   content: '';
-
   position: absolute;
   display: block;
   left: 0;
@@ -60,11 +64,6 @@ header {
   background-color: var(--accent-color);
   border-radius: 2px;
   transform: scale(1, 1);
-}
-
-.head-nav {
-  display: flex;
-  align-items: center;
 }
 
 .navigation .nav-link {

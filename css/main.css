@@ -114,21 +114,17 @@ textarea {
   overflow: hidden;
 }
 
-.head-logo {
-  color: var(--accent-color);
-  font-family: "Raleway";
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
 header {
   border-bottom: 1px solid #ececec;
 }
 
-.logo-style {
-  color: var(--title-text-color);
+.head-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-navigation {
@@ -138,6 +134,19 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.head-logo {
+  color: var(--accent-color);
+  font-family: "Raleway";
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-style {
+  color: var(--title-text-color);
 }
 
 .navigation {
@@ -187,15 +196,6 @@ header {
   border-radius: 2px;
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
-}
-
-.head-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .navigation .nav-link {
