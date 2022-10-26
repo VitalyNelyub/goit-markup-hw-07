@@ -1,14 +1,27 @@
 .mind-page {
   padding-top: 94px;
   padding-bottom: 94px;
+  &__title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__list {
+    color: var(--primary-text-color);
+    line-height: 1.71;
+    width: 270px;
+  }
 }
 
-.desc {
+.mind__grid {
   display: flex;
   gap: 30px;
 }
 
-.desk-item::before {
+.mind__item::before {
   display: block;
   content: '';
   height: 270px;
@@ -18,49 +31,28 @@
   background-color: var(--bgc-btn);
 }
 
-.item-antenna::before {
+.mind__item--antenna::before {
   background-image: url(../imeges/antenna.svg);
   margin-bottom: 30px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.item-clock::before {
+.mind__item--clock::before {
   background-image: url(../imeges/clock.svg);
   margin-bottom: 30px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-.item-diagram::before {
+.mind__item--diagram::before {
   background-image: url(../imeges/diagram.svg);
   margin-bottom: 30px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-.item-astronaut::before {
+.mind__item--astronaut::before {
   background-image: url(../imeges/astronaut.svg);
   margin-bottom: 30px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-/* .desk-item {
-  max-width: 270px;
-} */
-
-.desc-title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.desc-list {
-  color: var(--primary-text-color);
-  line-height: 1.71;
-  width: 270px;
 }
