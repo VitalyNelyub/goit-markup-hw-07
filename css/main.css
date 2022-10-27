@@ -639,13 +639,6 @@ header {
   margin-left: auto;
 }
 
-.submit__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 12px;
-}
-
 .mail-box {
   width: 358px;
   height: 50px;
@@ -656,6 +649,13 @@ header {
   background-color: transparent;
   color: var(--secondary-text-color);
   padding: 16px;
+}
+
+.submit__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
 }
 
 .submit-btn {
@@ -882,7 +882,7 @@ header {
   border-color: var(--accent-color);
 }
 
-.submit-btn {
+.submit-btn--modal {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -900,8 +900,8 @@ header {
   -webkit-transition: color var(--transition-time), background-color var(--transition-time);
   transition: color var(--transition-time), background-color var(--transition-time);
 }
-.submit-btn:hover,
-.submit-btn :focus {
+.submit-btn--modal:hover,
+.submit-btn--modal :focus {
   color: var(--accent-color);
   background-color: var(--bgc-btn);
 }
