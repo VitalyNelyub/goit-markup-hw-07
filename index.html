@@ -432,60 +432,60 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn" data-modal-close>
-          <svg class="modal-btn-icon" width="18" height="18">
+        <button class="close-btn" data-modal-close>
+          <svg width="18" height="18">
             <use href="./imeges/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
-        <form class="modal-form">
-          <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
-          <div class="form-list list">
-            <div class="form-item">
-              <label class="field-text" for="user-name">Ім'я </label>
+        <form class="form">
+          <p class="form__title">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="form__fields">
+            <div class="form__item">
+              <label class="data" for="user-name">Ім'я </label>
               <input
-                class="form-field"
+                class="data__text"
                 type="text"
                 name="user-name"
                 id="user-name"
                 placeholder="Степан"
                 required
               />
-              <svg class="modal-form-icon" width="18" height="18">
+              <svg class="data__icon" width="18" height="18">
                 <use href="./imeges/symbol-defs.svg#icon-person-black"></use>
               </svg>
             </div>
-            <div class="form-item">
-              <label class="field-text" for="phone-number">Телефон</label>
+            <div class="form__item">
+              <label class="data" for="phone-number">Телефон</label>
               <input
-                class="form-field"
+                class="data__text"
                 type="tel"
                 name="phone-number"
                 id="phone-number"
                 placeholder="+38-050-123-45-67"
                 required
               />
-              <svg class="modal-form-icon" width="18" height="18">
+              <svg class="data__icon" width="18" height="18">
                 <use href="./imeges/symbol-defs.svg#icon-phone-black"></use>
               </svg>
             </div>
-            <div class="form-item">
-              <label class="field-text" for="mail">Пошта</label>
+            <div class="form__item">
+              <label class="data" for="mail">Пошта</label>
               <input
-                class="form-field"
+                class="data__text"
                 type="email"
                 name="mail"
                 id="mail"
                 placeholder="mail@gmail.com"
                 required
               />
-              <svg class="modal-form-icon" width="18" height="18">
+              <svg class="data__icon" width="18" height="18">
                 <use href="./imeges/symbol-defs.svg#icon-email-black"></use>
               </svg>
             </div>
-            <div class="form-item">
-              <label class="field-text" for="comment">Коментар</label>
+            <div class="form__item">
+              <label class="data" for="comment">Коментар</label>
               <textarea
-                class="form-field-comment"
+                class="data__text--comment"
                 name="comment"
                 id="comment"
                 rows="7"
@@ -494,14 +494,14 @@
             </div>
           </div>
           <div class="confirm">
-            <label class="confirm-text" for="policy">
+            <label class="confirm__info" for="policy">
               <input class="check-box" type="checkbox" name="policy" id="policy" required />
-              <span class="check-box-icon"></span>
+              <span class="check-box__icon"></span>
               Погоджуюся з розсилкою та приймаю
-              <a class="confirm-doc" href="">Умови договору</a>
+              <a class="confirm__docs" href="">Умови договору</a>
             </label>
           </div>
-          <button class="submit-modal-btn" type="submit">Відправити</button>
+          <button class="submit-btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>

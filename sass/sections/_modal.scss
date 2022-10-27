@@ -33,7 +33,7 @@
   padding: 40px;
 }
 
-.modal-btn {
+.close-btn {
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -47,17 +47,15 @@
   align-items: center;
   padding: 0;
   transition: fill var(--transition-time);
-}
-
-.modal-btn:hover,
-.modal-btn:focus {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 /* Форма модального окна */
 
-
-.form-title {
+.form__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -67,43 +65,35 @@
   margin-bottom: 12px;
 }
 
-.form-list {
+.form__fields {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.form-item {
+.form__item {
   display: flex;
   flex-direction: column;
   gap: 4px;
   position: relative;
 }
 
-.field-text {
+.data {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
+  &__text {
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    outline: transparent;
+    transition: border var(--transition-time);
+  }
 }
 
-.modal-form-icon {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transition: fill var(--transition-time);
-}
-
-.form-field {
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  padding-left: 42px;
-  outline: transparent;
-  transition: border var(--transition-time);
-}
-
-.form-field-comment {
+.data__text--comment {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px;
@@ -112,74 +102,68 @@
   transition: border var(--transition-time);
 }
 
+.data__icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transition: fill var(--transition-time);
+}
+
 .confirm {
   text-align: center;
   margin-top: 20px;
+  &__info {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+    gap: 8.38px;
+    margin-left: 12px;
+  }
+  &__docs {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+  }
 }
 
-.confirm-text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
-
-.confirm-doc {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-
-  /* вопрос */
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.form-field:focus + .modal-form-icon,
-.form-field:hover + .modal-form-icon {
+.data__text:focus + .data__icon,
+.data__text:hover + .data__icon {
   fill: var(--accent-color);
 }
 
-.form-field:focus,
-.form-field:hover,
-.form-field-comment:focus,
-.form-field-comment:hover {
+.data__text:focus,
+.data__text:hover,
+.data__text--comment:focus,
+.data__text--comment:hover {
   border: solid 1px var(--accent-color);
 }
 
-/* Check-icon */
 .check-box {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   position: absolute;
+  &__icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 4px;
+  }
 }
 
-.confirm-text {
-  display: flex;
-  align-items: center;
-  gap: 8.38px;
-  margin-left: 12px;
-}
-
-.check-box-icon {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  border: 2px solid rgba(0, 0, 0, 1);
-  border-radius: 4px;
-}
-
-.check-box:checked + .check-box-icon {
+.check-box:checked + .check-box__icon {
   background-image: url(../imeges/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: var(--accent-color);
 }
 
-/* Check-icon */
-
-.submit-modal-btn {
+.submit-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -195,10 +179,9 @@
   border-radius: 4px;
   padding: 10px 52px;
   transition: color var(--transition-time), background-color var(--transition-time);
-}
-
-.submit-modal-btn:hover,
-.submit-modal-btn:focus {
-  color: var(--accent-color);
-  background-color: var(--bgc-btn);
+  &:hover,
+  :focus {
+    color: var(--accent-color);
+    background-color: var(--bgc-btn);
+  }
 }

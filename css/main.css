@@ -730,7 +730,7 @@ header {
   padding: 40px;
 }
 
-.modal-btn {
+.close-btn {
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -752,14 +752,12 @@ header {
   -webkit-transition: fill var(--transition-time);
   transition: fill var(--transition-time);
 }
-
-.modal-btn:hover,
-.modal-btn:focus {
+.close-btn:hover, .close-btn:focus {
   fill: var(--accent-color);
 }
 
 /* Форма модального окна */
-.form-title {
+.form__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -769,7 +767,7 @@ header {
   margin-bottom: 12px;
 }
 
-.form-list {
+.form__fields {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -780,7 +778,7 @@ header {
   gap: 10px;
 }
 
-.form-item {
+.form__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -792,22 +790,13 @@ header {
   position: relative;
 }
 
-.field-text {
+.data {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
 }
-
-.modal-form-icon {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  -webkit-transition: fill var(--transition-time);
-  transition: fill var(--transition-time);
-}
-
-.form-field {
+.data__text {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -817,7 +806,7 @@ header {
   transition: border var(--transition-time);
 }
 
-.form-field-comment {
+.data__text--comment {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px;
@@ -827,49 +816,23 @@ header {
   transition: border var(--transition-time);
 }
 
+.data__icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  -webkit-transition: fill var(--transition-time);
+  transition: fill var(--transition-time);
+}
+
 .confirm {
   text-align: center;
   margin-top: 20px;
 }
-
-.confirm-text {
+.confirm__info {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-}
-
-.confirm-doc {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-  /* вопрос */
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.form-field:focus + .modal-form-icon,
-.form-field:hover + .modal-form-icon {
-  fill: var(--accent-color);
-}
-
-.form-field:focus,
-.form-field:hover,
-.form-field-comment:focus,
-.form-field-comment:hover {
-  border: solid 1px var(--accent-color);
-}
-
-/* Check-icon */
-.check-box {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute;
-}
-
-.confirm-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -879,8 +842,32 @@ header {
   gap: 8.38px;
   margin-left: 12px;
 }
+.confirm__docs {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
 
-.check-box-icon {
+.data__text:focus + .data__icon,
+.data__text:hover + .data__icon {
+  fill: var(--accent-color);
+}
+
+.data__text:focus,
+.data__text:hover,
+.data__text--comment:focus,
+.data__text--comment:hover {
+  border: solid 1px var(--accent-color);
+}
+
+.check-box {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+.check-box__icon {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -888,15 +875,14 @@ header {
   border-radius: 4px;
 }
 
-.check-box:checked + .check-box-icon {
+.check-box:checked + .check-box__icon {
   background-image: url(../imeges/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: var(--accent-color);
 }
 
-/* Check-icon */
-.submit-modal-btn {
+.submit-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -914,9 +900,8 @@ header {
   -webkit-transition: color var(--transition-time), background-color var(--transition-time);
   transition: color var(--transition-time), background-color var(--transition-time);
 }
-
-.submit-modal-btn:hover,
-.submit-modal-btn:focus {
+.submit-btn:hover,
+.submit-btn :focus {
   color: var(--accent-color);
   background-color: var(--bgc-btn);
 }
