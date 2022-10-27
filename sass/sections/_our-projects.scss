@@ -1,18 +1,27 @@
-.work-section {
+.activity {
   padding-bottom: 94px;
 }
 
-.work-list {
+.activity__title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.activity__list {
   display: flex;
   gap: 30px;
 }
 
-.work-img {
+.activity__img {
   width: calc((100% - 60px) / 3);
   position: relative;
 }
 
-.work-sub-text {
+.activity__text {
   position: absolute;
   bottom: 0;
   width: 100%;
