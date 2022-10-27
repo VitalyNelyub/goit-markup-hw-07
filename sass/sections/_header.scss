@@ -5,7 +5,7 @@ header {
   display: flex;
   align-items: center;
 }
-.header__navigation {
+.navigation {
   display: flex;
   align-items: center;
 }
@@ -25,9 +25,10 @@ header {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  &--color {
-    color: var(--title-text-color);
-  }
+}
+
+.logo__part--dark {
+  color: var(--title-text-color);
 }
 
 .header__link {

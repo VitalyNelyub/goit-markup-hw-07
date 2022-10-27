@@ -1,32 +1,37 @@
 .team {
   background-color: var(--bgc-btn);
   padding: 94px 0;
+  &__title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }
 
-.work-title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.team-title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.team-card {
+.employee {
   display: flex;
   gap: 30px;
+    &__name {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__direction {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 16px;
+  }
 }
 
-.team-img {
+.employee__img {
   background-color: var(--primaci-bg-color);
   width: calc((100% - 90px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -34,31 +39,23 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.section-team {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  margin-bottom: 10px;
+.employee__info {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.work-team {
-  color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  margin-bottom: 16px;
-}
-
-/* Иконки соцсетей */
-.team-soc-list {
+.socials {
   display: flex;
   justify-content: center;
   gap: 10px;
+  &__link:hover,
+  &__link:focus {
+  background-color: var(--accent-color);
+  color: var(--primaci-bg-color);
 }
+  }
 
-.team-soc-link {
+.socials__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -72,18 +69,6 @@
   transition: color var(--transition-time), background-color var(--transition-time);
 }
 
-.team-soc-ikon {
+.socials__icon {
   fill: currentColor;
-}
-
-.team-soc-link:hover,
-.team-soc-link:focus {
-  background-color: var(--accent-color);
-  color: var(--primaci-bg-color);
-}
-/* Иконки соцсетей */
-
-.team-info {
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
